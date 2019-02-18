@@ -1,5 +1,5 @@
 ### 链表反转
-· 迭代法
+- 迭代法
 由于语法错误，指针的表达形式错误，使得没有产生正确的结果`p->next` 改变为 `p.next`
 ```
 class Solution(object):
@@ -17,7 +17,7 @@ class Solution(object):
             p = pr
         return q
 ```
-· 递归法
+- 递归法
 ```
 class Solution(object):
     def reverseList(self, head):
@@ -42,7 +42,7 @@ class Solution(object):
         return pp
 
 ```
-· 完整版实现
+- 完整版实现
 ```
 class ListNode:
     def __init__(self, x):
