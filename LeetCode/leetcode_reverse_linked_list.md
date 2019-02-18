@@ -42,7 +42,7 @@ class Solution(object):
         return pp
 
 ```
-· 完整版实现
+·完整版实现
 ```
 class ListNode:
     def __init__(self, x):
