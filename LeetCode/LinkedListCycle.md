@@ -16,7 +16,7 @@ class Solution(object):
         pr, pn = head, head
         if not head:
           return False
-        while pn and pn.next:
+        while pn and pn.next:#此处只能用快指针作为判定条件，快指针跑得更快，当其到达链表尾部时，整个循环停止，要不然慢指针就追上来了
           pr = pr.next
           pn = pn.next.next
           if pr == pn:
