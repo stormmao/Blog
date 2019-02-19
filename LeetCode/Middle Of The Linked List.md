@@ -14,8 +14,6 @@ return the second middle node
 class Solution:
     def middleNode(self, head: 'ListNode') -> 'ListNode':
         slow, fast = head, head
-        while not head :
-            return False
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
