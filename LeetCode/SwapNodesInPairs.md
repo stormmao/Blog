@@ -1,6 +1,7 @@
 # 反转链表中的相邻元素
 - 示例：Given 1->2->3->4, you should return the list as 2->1->4->3
 - 实现代码：  
+```
 Definition for singly-linked list.
    class ListNode:
      def __init__(self, x):
@@ -20,3 +21,4 @@ class Solution:
           pr.next, b.next, a.next = b, a, b.next
           pr = a
         return self.next 
+```
