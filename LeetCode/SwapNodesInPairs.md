@@ -17,6 +17,6 @@ class Solution:
         while pr.next and pr.next.next:
           a = pr.next
           b = a.next
-          pr.next, b.next, a.next = b, a, b.next#pr.next = b 的作用是衔接翻转后的节点
+          pr.next, b.next, a.next = b, a, b.next
           pr = a
         return self.next 
