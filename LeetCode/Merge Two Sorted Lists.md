@@ -10,17 +10,50 @@
 #         self.val = x
 #         self.next = None
 
+class Solution():
+    def mergeTwoLists(self, l1, l2):
+        node = dummy = ListNode(-1)#此处是新建链表，0是其初始元素，可以随便定义，dummy是一个哨兵，方便返回整个链表
+        while l1 and l2:
+            if l1.val >= l2.val: #这里最好画图理解一下，是一步步把较小的数据调上来，到最后指向空，会把l2剩下的所有数据调换过来
+                l1, l2 = l2, l1
+            node.next = l1
+            l1 = l1.next 
+            node = node.next
+        node.next = l1 or l2#如果其中一个链表为空，就会执行这条语句，返回不为空的链表
+        return dummy.next
+        
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
 class Solution:
     def mergeTwoLists(self, l1, l2):
-        node, dummy = ListNode(0) #此处是新建链表，0是其初始元素，可以随便定义，dummy是一个哨兵，方便返回整个链表
+        node, dummy = ListNode(0) #这里赋值发生错误，害我找了好久
         while l1 and l2:
-            if l1.val >= l2.val:z #这里最好画图理解一下，是一步步把较小的数据调上来，到最后指向空，会把l2剩下的所有数据调换过来
+            if l1.val >= l2.val:
                 l1, l2 = l2, l1                
             node.next = l1
             l1 = l1.next 
             node = node.next
-        node.next = l1 or l2
+        node.next = l1 or l2 
         return dummy.next
+```
+## 迭代法
+```
+def mergeTwoLists(self, l1, l2):
+    node = dummy = ListNode(0)
+    while l1 and l2:
+        if l1.val < l2.val:
+            node.next = ListNode(l1.val)  # or l1
+            l1 = l1.next
+        else:
+            node.next = ListNode(l2.val)  # or l2
+            l2 = l2.next
+        node = head.next
+    node.next = l1 or l2
+    return dummy.next
 ```
 ## 递归法
 ```
