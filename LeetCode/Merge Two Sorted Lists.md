@@ -30,7 +30,7 @@ class Solution():
 
 class Solution:
     def mergeTwoLists(self, l1, l2):
-        node, dummy = ListNode(0) #这里赋值发生错误，害我找了好久
+        node, dummy = ListNode(0) #这里赋值发生错误，害我找了好久，不能这样赋值，应该使用等号
         while l1 and l2:
             if l1.val >= l2.val:
                 l1, l2 = l2, l1                
