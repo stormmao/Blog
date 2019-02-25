@@ -19,6 +19,6 @@ class Solution:
           a = pr.next
           b = a.next
           pr.next, b.next, a.next = b, a, b.next #pr.next = b 的作用是衔接翻转后的节点
-          pr = a
+          pr = a  #此时a,b的位置已经互换，a是第二个节点了
         return self.next 
 ```
