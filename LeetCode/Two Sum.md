@@ -9,7 +9,7 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 ```
 ## 铁头娃做法
-最容易想到的实现方法，但是时间复杂度比较高，为 O(n*n)
+最容易想到的实现方法，但是时间复杂度比较高，为 O(n*n)，跑的时间领先全球，高达6690ms
 ```
 class Solution(object):
     def twoSum(self, nums, target):
@@ -19,9 +19,43 @@ class Solution(object):
         :rtype: List[int]
         """
         for i in range(len(nums)):
-            for j in range(1,len(nums)):
+            for j in range(i + 1,len(nums)):
                 if nums[i] + nums[j] == target:
                     return i,j
                 else:
-                    return None
+                    j = j +1    #这里要设置自加，要不然j的值不会往后增加，会使得不满足条件就直接输出else下的值，以前我写的return None，就直接没了
+            i = i +1
+if __name__ == '__main__':
+    sums = [1, 2, 3, 4]
+    t = 3
+    s = Solution()  # 新建一个类才能调用其中的方法
+    q = s.twoSum(sums, t) #特地调试了一下
+    print(q)
+```
+## 优雅的做法
+```
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        if len(nums) <= 1:
+            return False
+        hash_table = {}
+        for i in range(len(nums)): #时间复杂度为 O(n)
+            if nums[i] in hash_table:
+                return [hash_table[nums[i]],i]
+            else:
+                hash_table[target - nums[i]] = i
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+         for i, num in enumerate(nums):
+            sub_num = target - num
+            if sub_num in nums:
+                t_index = nums.index(sub_num)
+                if t_index != i:
+                     return [i, t_index]
 ```
