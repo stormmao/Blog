@@ -21,7 +21,7 @@ class Solution(object):
         for i in range(len(nums)):
             for j in range(i + 1,len(nums)):
                 if nums[i] + nums[j] == target:
-                    return i,j
+                    return [i,j] #后面的代码都注释掉也是可以的
                 else:
                     j = j +1    #这里要设置自加，要不然j的值不会往后增加，会使得不满足条件就直接输出else下的值，以前我写的return None，就直接没了
             i = i +1
@@ -45,7 +45,7 @@ class Solution(object):
             return False
         hash_table = {}
         for i in range(len(nums)): #时间复杂度为 O(n)
-            if nums[i] in hash_table:
+            if nums[i] in hash_table: # *target - nums[i]*就是要找的目标，如果数组中存在，就返回相应的下标，并且调出哈希表，返回对应的另外一个下标
                 return [hash_table[nums[i]],i]
             else:
                 hash_table[target - nums[i]] = i
