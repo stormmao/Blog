@@ -45,7 +45,7 @@ class Solution(object):
             return False
         hash_table = {}
         for i in range(len(nums)): #时间复杂度为 O(n)
-            if nums[i] in hash_table: # *target - nums[i]*就是要找的目标，如果数组中存在，就返回相应的下标，并且调出哈希表，返回对应的另外一个下标
+            if nums[i] in hash_table: # target - nums[i]就是要找的目标，如果数组中存在，就返回相应的下标，并且调出哈希表，返回对应的另外一个下标
                 return [hash_table[nums[i]],i]
             else:
                 hash_table[target - nums[i]] = i
@@ -59,3 +59,4 @@ class Solution:
                 if t_index != i:
                      return [i, t_index]
 ```
+*斜体*
