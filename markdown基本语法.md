@@ -1,2 +1,2 @@
-- [野生Markdown语法介绍]（https://www.jianshu.com/p/q81RER）
+- [野生Markdown语法介绍](https://www.jianshu.com/p/q81RER)
 - [菜鸟驿站Markdown语法](http://www.runoob.com/markdown/md-tutorial.html)
