@@ -8,15 +8,15 @@ Note that an empty string is also considered valid.
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        dict = {"]":"[",")":"(","}":"{"} #字典的定义差点忘了格式，还有这里的 key-value 的括号是反着的，这样更加容易匹配
+        dict = {"]":"[",")":"(","}":"{"}        # 字典的定义差点忘了格式，还有这里的 key-value 的括号是反着的，这样更加容易匹配
         for char in s:
             if char in dict.values():
                 stack.append(char)
             elif char in dict.keys():
                 if stack == [] or dict[char] != stack.pop():# 这里的判断条件刚开始写错了
                     return False
-            else:
+            else:                               # 如果出现非括号字符，直接返回错误
                 return False
-        return stack == [] # 栈清空了，就说明括号是左右对称的，返回 True
+        return stack == []                      # 栈清空了，就说明括号是左右对称的，返回 True
     
 ```
