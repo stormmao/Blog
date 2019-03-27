@@ -5,11 +5,11 @@ python中heapq的使用
 列出一些常见的用法：  
 heap = [] #建立一个常见的堆  
 heappush(heap,item)                   #往堆中插入一条新的值  
-item = heappop(heap)                #弹出最小的值  
+- item = heappop(heap)                #弹出最小的值  
 item = heap[0]                     #查看堆中最小的值，不弹出   
-heapify(x)                        #以线性时间将一个列表转为堆  
-item = heapreplace(heap,item)    #弹出一个最小的值，然后将item插入到堆当中。堆的整体的结构不会发生改变 
-heappoppush()                  #弹出最小的值，并且将新的值插入其中  
+- heapify(x)                        #以线性时间将一个列表转为堆  
+- item = heapreplace(heap,item)    #弹出一个最小的值，然后将item插入到堆当中。堆的整体的结构不会发生改变 
+- heappoppush()                  #弹出最小的值，并且将新的值插入其中  
 merge()                      #将多个堆进行合并  
 nlargest(n , iterbale, key=None)  #从堆中找出做大的N个数，key的作用和sorted( )方法里面的key类似，用列表元素的某个属性和函数作为关键字
   
@@ -22,7 +22,7 @@ class KthLargest(object):
         self.pool = nums
         self.k = k
         heapq.heapify(self.pool)
-        while len(self.pool) > k:     # 维护队堆的大小为 k 
+        while len(self.pool) > self.k:     # 维护队堆的大小为 k 
             heapq.heappop(self.pool)  # 多于的数扔出去 
 
             
