@@ -35,6 +35,7 @@ class Solution(object):
 
         return [dp[amount], -1][dp[amount] == MAX]
 ```
+- 代码的相关解释 
 ```
 [dp[amount], -1][dp[amount] == max_val] => [dp[amount], -1][0 or 1]
 if dp[amount] == max_val: [dp[amount], -1][1] => -1
