@@ -7,7 +7,7 @@ Explanation: 11 = 5 + 5 + 1
 - You may assume that you have an infinite number of each kind of coin.
 - 理一下自己的思路，考虑对输入的列表进行排序。因为是贪婪算法，所以使用从大到小排序`lp=sorted(coin,reverse=True)`。然后遍历整个排序的列表，从大到小
 每次都使用`amount -= lp[i] for i in range(len(lp)) if amount > lp[i]:`对 amount 进行处理，但是这种算法有一个很大弊端，不能够罗列出所有的情况
-。举一个例子`[1,2,5],11`是可以由`5，5，1`满足条件。但是如果是`[2,3,6],13`z这种解法会先使用2个6，然后会发现无解，但其实`6,3,2,2`就是解。
+。举一个例子`[1,2,5],11`是可以由`5，5，1`满足条件。但是如果是`[2,3,6],13`这种解法会先使用2个6，然后会发现无解，但其实`6,3,2,2`就是解。
 - 利用 BFS 的思想来解决这道题。
 ```
 def coinChange(coins, amount):
