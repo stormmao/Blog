@@ -38,8 +38,12 @@ class Solution(object):
 - 代码的相关解释 
 ```
 [dp[amount], -1][dp[amount] == max_val] => [dp[amount], -1][0 or 1]
-if dp[amount] == max_val: [dp[amount], -1][1] => -1
-else: [dp[amount], -1][0] => dp[amount]
+
+if dp[amount] == max_val: 
+    [dp[amount], -1][1] => -1
+else: 
+    [dp[amount], -1][0] => dp[amount]
+    
  it'd be a little bit more readable regarding the line return [dp[amount], -1][dp[amount] == MAX], 
  it could be shorter as return [dp[-1], -1][dp[-1] == MAX], where dp[-1] is the right most element of dp.
 ```
