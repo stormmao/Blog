@@ -14,7 +14,9 @@ def duplicate_encode(word):
     return new_string
 ```
 - 简洁明了
+> Counter({'p': 2, 'i': 2, 'o': 1, 'k': 1, 'a': 1})函数会统计字符串的每个字母的个数，并返回一个字典类型。
 ```
+from collections import Counter
 def duplicate_encode(word):
     return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
 ```
