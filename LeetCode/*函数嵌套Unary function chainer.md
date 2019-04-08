@@ -8,7 +8,7 @@ def chained(functions):
         return x
     return f
 ```
-- [’reduce‘ 函数](http://www.runoob.com/python/python-func-reduce.html)[补充说明](https://docs.python.org/zh-cn/3/library/functools.html?highlight=reduce#functools.reduce)
+- [’reduce‘ 函数](http://www.runoob.com/python/python-func-reduce.html)-[补充说明](https://docs.python.org/zh-cn/3/library/functools.html?highlight=reduce#functools.reduce)
 ```
 def chained(functions):
     return lambda x: reduce(lambda v, f: f(v), functions, x)
