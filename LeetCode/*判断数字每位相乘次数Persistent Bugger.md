@@ -1,6 +1,7 @@
 - 没有想出来啊，坐在床上编程效率有点低啊，这道题其实是不难的，我已经想到使用迭代，字符串转化了，不过还没拼接起来。还有这里使用的是列表进行迭代，我想的
 是用字符串进行迭代，但是会很麻烦。
-    - [reduce函数](https://www.geeksforgeeks.org/reduce-in-python/)
+- [reduce函数](https://www.geeksforgeeks.org/reduce-in-python/)    
+
     ###########
 ```
 import functools
@@ -13,7 +14,7 @@ def persistence(n):
         count = count + 1
     return count
 ```
-- 使用另外一个库[’operator‘](https://docs.python.org/zh-cn/3/library/operator.html?highlight=operator)实现
+- 使用另外一个库[`operator`](https://docs.python.org/zh-cn/3/library/operator.html?highlight=operator)实现
 ```
 import operator
 def persistence(n):
