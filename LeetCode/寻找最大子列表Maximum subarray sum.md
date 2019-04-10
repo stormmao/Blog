@@ -16,7 +16,7 @@ def maxSequence(arr):
         sum = 0
     return maxnum
 ```
-- 让我看看别人怎么写的,逻辑更加的简洁，没有那么多限制条件
+- 让我看看别人怎么写的,逻辑更加的简洁，没有那么多限制条件，时间复杂度为O(n)
 ```
 
 def maxSequence1(arr):
