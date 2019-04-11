@@ -8,6 +8,7 @@ which has the largest sum and return its sum.
 ### Follow up:
  - If you have figured out the O(n) solution, try coding another solution 
      using the divide and conquer approach, which is more subtle.
+### 实现过程
 - 发现使用以前的穷举算法不行，提交不了。时间复杂度太高了，没有想出解决的好办法勒，参考了别人的代码~
 ```
 class Solution:
@@ -40,4 +41,16 @@ def maxSequence1(arr):
     return max
 print(maxSequence1([-2]))
 结果为：-2
+```
+- 另外一种写法，也非常巧妙,[思路详解](https://www.youtube.com/watch?v=2MmGzdiKR9Y)
+```
+ def maxSubArray(self, A):
+        if not A:
+            return 0
+
+        curSum = maxSum = A[0]
+        for num in A[1:]:
+            curSum = max(num, curSum + num)
+            maxSum = max(maxSum, curSum)
+        return maxSum
 ```
