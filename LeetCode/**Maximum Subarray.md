@@ -6,7 +6,7 @@ which has the largest sum and return its sum.
     Explanation: [4,-1,2,1] has the largest sum = 6.
     
 ### Follow up:
-     - If you have figured out the O(n) solution, try coding another solution 
+ - If you have figured out the O(n) solution, try coding another solution 
      using the divide and conquer approach, which is more subtle.
 - 发现使用以前的穷举算法不行，提交不了。时间复杂度太高了，没有想出解决的好办法勒，参考了别人的代码~
 ```
