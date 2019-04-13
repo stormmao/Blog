@@ -1,3 +1,4 @@
+# 分治算法是一种处理问题的思想，递归是一种编程技巧
 private int num = 0; // 全局变量或者成员变量
 
 public int count(int[] a, int n) {
