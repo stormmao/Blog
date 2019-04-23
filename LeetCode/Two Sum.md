@@ -62,10 +62,11 @@ class Solution(object):
             return False
         hash_table = {}
         for i in range(len(nums)): #时间复杂度为 O(n)
-            if nums[i] in hash_table: # target - nums[i]就是要找的目标，如果哈希表中存在，就返回相应的下标，并且调出哈希表，返回对应的另外一个下标
+            if nums[i] in hash_table: # target - nums[i]就是要找的目标，如果哈希表中存在，就返回相应的下标，
+            并且调出哈希表，返回对应的另外一个下标
                 return [hash_table[nums[i]],i]
             else:
-                hash_table[target - nums[i]] = i
+                hash_table[target - nums[i]] = i # 建立映射关系，值映射索引号
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
