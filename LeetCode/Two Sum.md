@@ -46,7 +46,7 @@ def two_sum(numbers, target):
         if target-value in numbers:
             t_index = numbers.index(target-value)
             if t_index != i:
-                return i,t_index
+                return i,t_index/return sorted([index1, index2])#防止顺序出现错误
 print(two_sum([0,0],0))
 ```
 ## 优雅的做法
