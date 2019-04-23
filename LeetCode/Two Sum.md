@@ -32,6 +32,23 @@ if __name__ == '__main__':
     q = s.twoSum(sums, t) #特地调试了一下
     print(q)
 ```
+## 第二次做这题
+```
+def two_sum(numbers, target):
+    for i,value in enumerate(numbers):
+        for j in range(1,len(numbers)):  #可以改进这句话，减少时间复杂度
+            if target-value == numbers[j]:
+                return i,j
+print(two_sum([0,0],0))
+改进版
+def two_sum(numbers, target):
+    for i,value in enumerate(numbers):
+        if target-value in numbers:
+            t_index = numbers.index(target-value)
+            if t_index != i:
+                return i,t_index
+print(two_sum([0,0],0))
+```
 ## 优雅的做法
 ```
 class Solution(object):
@@ -45,7 +62,7 @@ class Solution(object):
             return False
         hash_table = {}
         for i in range(len(nums)): #时间复杂度为 O(n)
-            if nums[i] in hash_table: # target - nums[i]就是要找的目标，如果数组中存在，就返回相应的下标，并且调出哈希表，返回对应的另外一个下标
+            if nums[i] in hash_table: # target - nums[i]就是要找的目标，如果哈希表中存在，就返回相应的下标，并且调出哈希表，返回对应的另外一个下标
                 return [hash_table[nums[i]],i]
             else:
                 hash_table[target - nums[i]] = i
