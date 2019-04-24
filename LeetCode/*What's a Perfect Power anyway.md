@@ -12,12 +12,12 @@ def isPP2(n):
         if i**k==n:
             return [i,k]
 ```
-- 高极写法[round函数](https://docs.python.org/zh-cn/3/library/functions.html?highlight=round#round)
+- 高极写法,[round函数](https://docs.python.org/zh-cn/3/library/functions.html?highlight=round#round)
 ```
 from math import ceil, log, sqrt
 
 def isPP(n):
-    for b in xrange(2, int(sqrt(n)) + 1):
+    for b in range(2, int(sqrt(n)) + 1):
         e = int(round(log(n, b)))
         if b ** e == n:
             return [b, e]
