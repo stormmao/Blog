@@ -46,3 +46,26 @@ def main():
 if __name__ == '__main__':
 
 ```
+- 参考别人的代码，发现我有些代码是多余的`current = node`可以直接使用`node`
+```
+class Node(object):
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+    
+def length(node):
+    leng = 0
+    while node:
+        leng += 1
+        node = node.next
+    return leng
+  
+def count(node, data):
+    c = 0
+    while node:
+        if node.data==data:
+            c += 1
+        node = node.next
+    return c
+```
+
