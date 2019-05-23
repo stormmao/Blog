@@ -17,3 +17,18 @@
 ### 远端仓库
 - 创建一个仓库，然后使用 git remote add origin https://github.com/stormmao/ex.git 关联远端仓库
 - git push -u origin master 推送本地仓库与远端仓库同步
+### 分支管理
+- git branch：查看分支
+- git branch <name>：创建分支
+- git checkout <name>：切换分支
+- git checkout -b <name>：创建+切换分支
+- git merge <name>：合并某分支到当前分支
+- git branch -d <name>：删除分支
+### 分支冲突
+- 当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。
+  用git log --graph命令可以看到分支合并图
+### 分支管理
+- git merge --no-ff -m "merge with no-ff" dev ：合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并，加上-m参数，把commit描述写进去
+### Bug分支
+- 修复 bug 时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；当手头工作没有完成时，先把工作现场 git stash 一下，然后去修复bug，修复后，
+  再 git stash pop，回到工作现场。
