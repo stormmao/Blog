@@ -47,4 +47,4 @@
   
   
   
-参考文献：[廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/896043488029600/1216289527823648)[Git官网](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA)
+参考文献：[廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/896043488029600/1216289527823648)--[Git官网](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA)
