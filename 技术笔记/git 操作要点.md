@@ -44,6 +44,15 @@
 ### rebase-[变基](http://gitbook.liuhui998.com/4_2.html)
 - rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
 - rebase 的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比
+### 标签管理
+- git tag <tagname>：用于新建一个标签，默认为 HEAD，也可以指定一个 commit id；
+- git tag -a <tagname> -m "blablabla..."：可以指定标签信息；
+- git tag：可以查看所有标签
+- git push origin <tagname>可以推送一个本地标签；
+- git push origin --tags可以推送全部未推送过的本地标签；
+- git tag -d <tagname>可以删除一个本地标签；
+- git push origin :refs/tags/<tagname>可以删除一个远程标签。
+
   
   
   
