@@ -25,22 +25,22 @@
 - git merge <name>：合并某分支到当前分支
 - git branch -d <name>：删除分支
 ### 分支冲突
-- 当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。
-  用git log --graph命令可以看到分支合并图
+- 当 Git 无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。解决冲突就是把 Git 合并失败的文件手动编辑为我们希望的内容，再提交。
+  用 git log --graph 命令可以看到分支合并图
 ### 分支管理
-- git merge --no-ff -m "merge with no-ff" dev ：合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并，加上-m参数，把commit描述写进去
+- git merge --no-ff -m "merge with no-ff" dev ：合并分支时，加上 --no-ff 参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward 合并就看不出来曾经做过合并，加上 -m 参数，把 commit 描述写进去
 ### Bug 分支
-- 修复 bug 时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；当手头工作没有完成时，先把工作现场 git stash 一下，然后去修复bug，修复后，
+- 修复 bug 时，我们会通过创建新的 bug 分支进行修复，然后合并，最后删除；当手头工作没有完成时，先把工作现场 git stash 一下，然后去修复 bug，修复后，
   再 git stash pop，回到工作现场。
 ### Feature 分支
 - 开发一个新 feature，最好新建一个分支；如果要丢弃一个没有被合并过的分支，可以通过 git branch -D <name> 强行删除。
 ### 多人协作
-- 查看远程库信息，使用git remote -v；
+- 查看远程库信息，使用 git remote -v；
 - 本地新建的分支如果不推送到远程，对其他人就是不可见的；
-- 从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
--  在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
-- 建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
-- 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突
+- 从本地推送分支，使用 git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
+-  在本地创建和远程分支对应的分支，使用 git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
+- 建立本地分支和远程分支的关联，使用 git branch --set-upstream branch-name origin/branch-name；
+- 从远程抓取分支，使用 git pull，如果有冲突，要先处理冲突
 ### rebase-[变基](http://gitbook.liuhui998.com/4_2.html)
 - rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
 - rebase 的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比
@@ -48,10 +48,13 @@
 - git tag <tagname>：用于新建一个标签，默认为 HEAD，也可以指定一个 commit id；
 - git tag -a <tagname> -m "blablabla..."：可以指定标签信息；
 - git tag：可以查看所有标签
-- git push origin <tagname>可以推送一个本地标签；
-- git push origin --tags可以推送全部未推送过的本地标签；
-- git tag -d <tagname>可以删除一个本地标签；
-- git push origin :refs/tags/<tagname>可以删除一个远程标签。
+- git push origin <tagname> 可以推送一个本地标签；
+- git push origin --tags 可以推送全部未推送过的本地标签；
+- git tag -d <tagname> 可以删除一个本地标签；
+- git push origin :refs/tags/<tagname> 可以删除一个远程标签。
+### 忽略特殊文件
+- 忽略某些文件时，需要编写 .gitignore；
+- .gitignore 文件本身要放到版本库里，并且可以对 .gitignore 做版本管理！
 
   
   
