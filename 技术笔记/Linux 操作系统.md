@@ -12,10 +12,11 @@
     - CentOS 下面是 yum，搜索 jdk、yum search jdk，安装 yum install java-11-openjdk.x86_64，卸载 yum erase java-11-openjdk.x86_64
     - Ubuntu 下面是 apt-get，搜索 apt-cache search jdk，安装 apt-get install openjdk-9-jdk，卸载 apt-get purge openjdk-9-jdk
 
-| 左对齐 | 右对齐 | 居中对齐 |
-| :-----| ----: | :----: |
-| 单元格 | 单元格 | 单元格 |
-| 单元格 | 单元格 | 单元格 |
+    | 操作 | CentOS | Ubuntu  |
+    | :-----:| :----: | :----: |
+    | 搜索 | yum search jdk | apt-cache search jdk |
+    | 安装 |  yum install java-11-openjdk.x86_64 |  apt-get install openjdk-9-jdk |
+    | 卸载 | yum erase java-11-openjdk.x86_64 |apt-get purge openjdk-9-jdk |
 
 - 运行程序
     - Linux 执行程序最常用的一种方式,通过 shell 在交互命令行里面运行：./filename 运行这个文件
