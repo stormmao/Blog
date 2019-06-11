@@ -23,7 +23,7 @@
     - yy → 拷贝当前行当行于 ddP
 - Undo/Redo
     - u → undo
-    - <C-r><C-r> → redo
+    - Ctl+r → redo
 - 打开/保存/退出/改变文件(Buffer)
     - :e <path/to/file> → 打开一个文件
     - :w → 存盘
