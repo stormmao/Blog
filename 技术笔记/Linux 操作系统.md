@@ -23,7 +23,7 @@
     - Linux 运行程序的第二种方式,后台运行，最终命令的一般形式为 nohup command >out.file 2>&1 &。这里面,“1”表示文件描述符 1,表示标准输出,“2”表示文件描述符 2,意思是标准错误输出,“2>&1”表示标准输出和错误输出合并到 out.file 里
 - 关机与重启
     - shutdown -h now 是现在就关机
-    - reboot就是重启
+    - reboot 就是重启
 
 [W3Cschool linux 教程](https://www.w3cschool.cn/linux/)
 []()
