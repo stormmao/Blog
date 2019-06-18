@@ -24,6 +24,7 @@
 - 关机与重启
     - shutdown -h now 是现在就关机
     - reboot 就是重启
-
+### Linux X86 架构
+![alt 属性文本](https://static001.geekbang.org/resource/image/fa/9b/fa6c2b6166d02ac37637d7da4e4b579b.jpeg)
 [W3Cschool linux 教程](https://www.w3cschool.cn/linux/)
 []()
