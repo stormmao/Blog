@@ -27,5 +27,11 @@
 ### Linux X86 架构
 - 计算机工作模式
 ![alt 硬件与逻辑对应](https://static001.geekbang.org/resource/image/fa/9b/fa6c2b6166d02ac37637d7da4e4b579b.jpeg)
+- CPU 和内存是如何配合工作的
+    - 运算单元
+    - 数据单元
+    - 控制单元
+
+![alt ](https://static001.geekbang.org/resource/image/3a/23/3afda18fc38e7e53604e9ebf9cb42023.jpeg)
 [W3Cschool linux 教程](https://www.w3cschool.cn/linux/)
-[]()
+[极客时间-趣谈 Linux 系统](https://time.geekbang.org/column/article/89417)
