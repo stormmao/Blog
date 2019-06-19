@@ -31,6 +31,22 @@
     - 运算单元
     - 数据单元
     - 控制单元
+- 汇编基本命令
+    - move a b :把b值赋给a,使a=b
+    - call 和 ret :call调用子程序,子程序以ret结尾
+    - jmp :无条件跳
+    - int :中断指令
+    - add a b : 加法,a=a+b
+    - or :或运算
+    - xor :异或运算
+    - shl :算术左移
+    - ahr :算术右移
+    - push xxx :压xxx入栈
+    - pop xxx: xxx出栈
+    - inc: 加1
+    - dec: 减1
+    - sub a b : a=a-b
+    - cmp: 减法比较，修改标志位
 
 ![alt ](https://static001.geekbang.org/resource/image/3a/23/3afda18fc38e7e53604e9ebf9cb42023.jpeg)
 [W3Cschool linux 教程](https://www.w3cschool.cn/linux/)
