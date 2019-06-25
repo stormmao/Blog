@@ -21,6 +21,9 @@
 - 运行程序
     - Linux 执行程序最常用的一种方式,通过 shell 在交互命令行里面运行：./filename 运行这个文件
     - Linux 运行程序的第二种方式,后台运行，最终命令的一般形式为 nohup command >out.file 2>&1 &。这里面,“1”表示文件描述符 1,表示标准输出,“2”表示文件描述符 2,意思是标准错误输出,“2>&1”表示标准输出和错误输出合并到 out.file 里
+- 命令别名
+    - 添加到 .bash_profile 文件里
+    - alias untar='tar -zxvf'
 - 关机与重启
     - shutdown -h now 是现在就关机
     - reboot 就是重启
