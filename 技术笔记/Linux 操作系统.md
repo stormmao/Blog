@@ -23,7 +23,17 @@
     - Linux 运行程序的第二种方式,后台运行，最终命令的一般形式为 nohup command >out.file 2>&1 &。这里面,“1”表示文件描述符 1,表示标准输出,“2”表示文件描述符 2,意思是标准错误输出,“2>&1”表示标准输出和错误输出合并到 out.file 里
 - 命令别名
     - 添加到 .bash_profile 文件里
-    - alias untar='tar -zxvf'
+    - 解压文件 alias untar='tar -zxvf'
+    - 支持断点下载 alias wget='wget -c '
+    - 生成一个 20 个字符的随机数密码 alias getpass="openssl rand -base64 20"
+    - 校验一下 checksum 值 alias sha='shasum -a 256 '
+    - 使用 -c 命令将其限制为 5 次输出 alias ping='ping -c 5'
+    - 随时随地启动一个 web 服务器 alias www='python -m SimpleHTTPServer 8000'
+    - 网速的测试，借助第三方工具 speedtest-cli ，alias speed='speedtest-cli --server 2406 --simple'
+    - 公网 IP alias ipe='curl ipinfo.io/ip'
+    - 局域网 IP alias ipi='ipconfig getifaddr en0'
+    - 清屏 alias c='clear'
+    
 - 关机与重启
     - shutdown -h now 是现在就关机
     - reboot 就是重启
