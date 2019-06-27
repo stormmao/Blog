@@ -5,7 +5,9 @@
     - passwd 更改密码
 - 浏览文件
     - ls -l
-- 安装软件
+- 搜索字符
+    - grep -r "string“ ./
+- 安装软件 
     - CentOS 下面使用 rpm -i jdk-XXX_linux-x64_bin.rpm 进行安装
     - Ubuntu 下面使用 dpkg -i jdk-XXX_linux-x64_bin.deb。其中 -i 就是 install 的意思。
 - 软件管家
