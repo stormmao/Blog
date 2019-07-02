@@ -53,4 +53,13 @@ Shell 传递参数实例！
 - 数组中可以存放多个值。Bash Shell 只支持一维数组（不支持多维数组），初始化时不需要定义数组大小（与 PHP 类似）。与大部分编程语言类似，数组元素的下标由0开始。Shell 数组用括号来表示，元素用"空格"符号分割开。
 - 读取数组读取数组元素值的一般格式是：`${array_name[index]}`
 - 获取数组中的所有元素使用@ 或 * 可以获取数组中的所有元素:`echo "数组的元素为: ${my_array[*]}" echo "数组的元素为: ${my_array[@]}"`
-
+### Shell echo命令
+- 显示普通字符串：echo "It is a test"
+- 显示转义字符：echo "\"It is a test\""
+- 显示变量：
+    - read 命令从标准输入中读取一行,并把输入行的每个字段的值指定给 shell 变量
+     ```
+     #!/bin/sh
+     read name 
+     echo "$name It is a test"
+     ```
