@@ -39,6 +39,11 @@
 - 关机与重启
     - shutdown -h now 是现在就关机
     - reboot 就是重启
+- 快速切换目录的up命令
+    - up [dir|num|-]
+    - dir   full or partial name of any parent directory
+    - num   number of times you'd have to type `../` previous working directory
+    - [up 仓库](https://github.com/shannonmoeller/up)
 ### Linux X86 架构
 - 计算机工作模式
 ![alt 硬件与逻辑对应](https://static001.geekbang.org/resource/image/fa/9b/fa6c2b6166d02ac37637d7da4e4b579b.jpeg)
