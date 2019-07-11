@@ -26,7 +26,8 @@
 - 可以强制转型，但超出范围的强制转型会得到错误的结果；
 - 应该选择合适范围的整型（int或long），没有必要为了节省内存而使用byte和short进行整数运算
 
-
+#### 布尔运算
+- 避免短路运算boolean isPrimaryStudent = age >=6?(age <= 12?true:false):false;
 
 
 
