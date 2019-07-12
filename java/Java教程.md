@@ -47,7 +47,18 @@
 | %f  | 格式化输出浮点数  |
 | %e  | 格式化输出科学计数法表示的浮点数 |
 | %s  | 格式化字符串 |
-
+- Java提供的输出包括：System.out.println() / print() / printf()，其中printf()可以格式化输出；
+- Java提供Scanner对象来方便输入，读取对应的类型可以使用：scanner.nextLine() / nextInt() / nextDouble() / ...
+#### if判断
+- if ... else可以做条件判断，else是可选的；不推荐省略花括号{}；多个if ... else串联要特别注意判断顺序；要注意if的边界条件；
+- 要注意浮点数判断相等不能直接用==运算符；
+- 引用类型判断内容相等要使用equals()，注意避免NullPointerException。
+#### switch选择
+- switch语句可以做多重选择，然后执行匹配的case语句后续代码；
+- switch的计算结果必须是整型、字符串或枚举类型；
+- 注意千万不要漏写break，建议打开fall-through警告；
+- 总是写上default，建议打开missing default警告；
+- 从Java 12开始，switch语句升级为表达式，不再需要break，并且代码更简洁
 
 
 
