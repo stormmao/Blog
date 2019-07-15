@@ -59,8 +59,10 @@
 - 注意千万不要漏写break，建议打开fall-through警告；
 - 总是写上default，建议打开missing default警告；
 - 从Java 12开始，switch语句升级为表达式，不再需要break，并且代码更简洁
-
-
+####  while循环
+- while循环先判断循环条件是否满足，再执行循环语句；
+- while循环可能一次都不执行；
+- 编写循环时要注意循环条件，并避免死循环
 
 
 
