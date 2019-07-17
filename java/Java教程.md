@@ -66,7 +66,12 @@
 #### do while循环
 - do while循环先执行循环，再判断条件；
 - do while循环会至少执行一次
-
+#### break和continue
+- break语句可以跳出当前循环；
+- break语句通常配合if，在满足条件时提前结束整个循环；
+- break语句总是跳出最近的一层循环；
+- continue语句可以提前结束本次循环；
+- continue语句通常配合if，在满足条件时提前结束本次循环
 
 
 
