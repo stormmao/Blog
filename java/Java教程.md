@@ -142,7 +142,11 @@
 - JDK的其它常用类定义在java.util.*，java.math.*，java.text.*，……；
 - 包名推荐使用倒置的域名，例如org.apache
 
-
+#### 作用域
+- Java内建的访问权限包括public、protected、private和package权限；
+- Java在方法内部定义的变量是局部变量，局部变量的作用域从变量声明开始，到一个块结束；
+- final修饰符不是访问权限，它可以修饰class、field和method；
+- 一个.java文件只能包含一个public类，但可以包含多个非public类
 
 
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
