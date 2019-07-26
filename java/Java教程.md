@@ -148,5 +148,11 @@
 - final修饰符不是访问权限，它可以修饰class、field和method；
 - 一个.java文件只能包含一个public类，但可以包含多个非public类
 
+#### classpath与jar
+- JVM通过环境变量classpath决定搜索class的路径和顺序；
+- 不推荐设置系统环境变量classpath，始终建议通过-cp命令传入；
+- jar包相当于目录，可以包含很多.class文件，方便下载和使用；
+- MANIFEST.MF文件可以提供jar包的信息，如Main-Class，这样可以直接运行jar包
+
 
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
