@@ -158,4 +158,8 @@
 #### 字符串与编码
 - 当我们想要比较两个字符串是否相同时，要特别注意，我们实际上是想比较字符串的内容是否相同。必须使用equals()方法而不能用==，要忽略大小写比较，使用equalsIgnoreCase()方法
 
+#### StringBuilder
+- StringBuilder是可变对象，用来高效拼接字符串；
+- StringBuilder可以支持链式操作，实现链式操作的关键是返回实例本身；
+- StringBuffer是StringBuilder的线程安全版本，现在很少使用.
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
