@@ -162,4 +162,10 @@
 - StringBuilder是可变对象，用来高效拼接字符串；
 - StringBuilder可以支持链式操作，实现链式操作的关键是返回实例本身；
 - StringBuffer是StringBuilder的线程安全版本，现在很少使用.
+#### StringJoiner
+- 用指定分隔符拼接字符串数组时，使用StringJoiner或者String.join()更方便；
+- 用StringJoiner拼接字符串时，还可以额外附加一个“开头”和“结尾”.
+
+
+
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
