@@ -15,7 +15,6 @@
 - Java源码本质上是一个文本文件，我们需要先用javac把Hello.java编译成字节码文件Hello.class，然后，用java命令执行这个字节码文件;
 - 使用javac可以将.java源码编译成.class字节码；使用java可以运行一个已编译的Java程序，参数是类名.
 
-
 #### Java程序基本结构
 - 类名必须以英文字母开头，后接字母，数字和下划线的组合习惯以大写字母开头
 - 对于float类型，需要加上f后缀
@@ -166,6 +165,14 @@
 - 用指定分隔符拼接字符串数组时，使用StringJoiner或者String.join()更方便；
 - 用StringJoiner拼接字符串时，还可以额外附加一个“开头”和“结尾”.
 
-
+#### 包装类型
+- 基本类型：byte，short，int，long，boolean，float，double，char
+- 引用类型：所有class和interface类型
+- Java核心库提供的包装类型可以把基本类型包装为class；
+- 自动装箱和自动拆箱都是在编译期完成的（JDK>=1.5）；
+- 装箱和拆箱会影响执行效率，且拆箱时可能发生NullPointerException；
+- 包装类型的比较必须使用equals()；
+- 整数和浮点数的包装类型都继承自Number；
+- 包装类型提供了大量实用方法
 
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
