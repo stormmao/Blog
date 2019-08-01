@@ -179,4 +179,15 @@
 - 属性是一种通用的叫法，并非Java语法规定；
 - 可以利用IDE快速生成getter和setter；
 - 使用Introspector.getBeanInfo()可以获取属性列表
+#### 枚举类
+- 因此，引用类型比较，要始终使用equals()方法，但enum类型可以例外。
+- 这是因为enum类型的每个常量在JVM中只有一个唯一实例，所以可以直接用==比较，
+- Java使用enum定义枚举类型，它被编译器编译为final class Xxx extends Enum { … }；
+- 通过name()获取常量定义的字符串，注意不要使用toString()；
+- 通过ordinal()返回常量定义的顺序（无实质意义）；
+- 可以为enum编写构造方法、字段和方法
+- enum的构造方法要声明为private，字段强烈建议声明为final；
+- enum适合用在switch语句中
+
+
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
