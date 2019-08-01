@@ -173,6 +173,10 @@
 - 装箱和拆箱会影响执行效率，且拆箱时可能发生NullPointerException；
 - 包装类型的比较必须使用equals()；
 - 整数和浮点数的包装类型都继承自Number；
-- 包装类型提供了大量实用方法
-
+- 包装类型提供了大量实用方法.
+#### JavaBean
+- JavaBean是一种符合命名规范的class，它通过getter和setter来定义属性；
+- 属性是一种通用的叫法，并非Java语法规定；
+- 可以利用IDE快速生成getter和setter；
+- 使用Introspector.getBeanInfo()可以获取属性列表
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
