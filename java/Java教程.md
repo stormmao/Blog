@@ -189,5 +189,23 @@
 - enum的构造方法要声明为private，字段强烈建议声明为final；
 - enum适合用在switch语句中
 
+#### BigInteger
+- BigInteger用于表示任意大小的整数；
+- BigInteger是不变类，并且继承自Number；
+- 将BigInteger转换成基本类型时可使用longValueExact()等方法保证结果准确
+#### BigDecimal
+- BigDecimal用于表示精确的小数，常用于财务计算；
+- 比较BigDecimal的值是否相等，必须使用compareTo()而不能使用equals()
+#### 常用工具类
+- Java提供的常用工具类有：
+- Math：数学计算
+- Random：生成伪随机数
+- SecureRandom：生成安全的随机数
 
+#### Java的异常
+- Java使用异常来表示错误，并通过try ... catch捕获异常；
+- Java的异常是class，并且从Throwable继承；
+- Error是无需捕获的严重错误，Exception是应该捕获的可处理的错误；
+- RuntimeException无需强制捕获，非RuntimeException（Checked Exception）需强制捕获，或者用throws声明；
+- 不推荐捕获了异常但不进行任何处理。
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
