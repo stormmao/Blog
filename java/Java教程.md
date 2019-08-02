@@ -51,7 +51,7 @@
 - Java提供Scanner对象来方便输入，读取对应的类型可以使用：scanner.nextLine() / nextInt() / nextDouble() / ...
 #### if判断
 - if ... else可以做条件判断，else是可选的；不推荐省略花括号{}；多个if ... else串联要特别注意判断顺序；要注意if的边界条件；
-- 要注意浮点数判断相等不能直接用==运算符；
+-  要注意浮点数判断相等不能直接用==运算符；
 - 引用类型判断内容相等要使用equals()，注意避免NullPointerException.
 #### switch选择
 - switch语句可以做多重选择，然后执行匹配的case语句后续代码；
@@ -214,4 +214,9 @@
 - 多个catch语句的匹配顺序非常重要，子类必须放在前面；
 - finally语句保证了有无异常都会执行，它是可选的；
 - 一个catch语句也可以匹配多个非继承关系的异常
+
+#### 抛出异常
+- 调用printStackTrace()可以打印异常的传播栈，对于调试非常有用；
+- 捕获异常并再次抛出新的异常时，应该持有原始异常信息；
+- 通常不要在finally中抛出异常。如果在finally中抛出异常，应该原始异常加入到原有异常中。调用方可通过Throwable.getSuppressed()获取所有添加的Suppressed Exception
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
