@@ -233,4 +233,13 @@
 - 日志记录可以按级别分类，便于打开或关闭某些级别；
 - 可以根据配置文件调整日志，无需修改代码；
 - Java标准库提供了java.util.logging来实现日志功能
+
+### 反射
+#### class类
+- JVM为每个加载的class及interface创建了对应的Class实例来保存class及interface的所有信息；
+- 获取一个class对应的Class实例后，就可以获取该class的所有信息；
+- 通过Class实例获取class信息的方法称为反射（Reflection）；
+- JVM总是动态加载class，可以在运行期根据条件来控制加载class。
+
+
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
