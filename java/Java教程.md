@@ -241,5 +241,8 @@
 - 通过Class实例获取class信息的方法称为反射（Reflection）；
 - JVM总是动态加载class，可以在运行期根据条件来控制加载class。
 
+#### 动态代理
+- Java标准库提供了动态代理功能，允许在运行期动态创建一个接口的实例；
+- 动态代理是通过Proxy创建代理对象，然后将接口方法“代理”给InvocationHandler完成的
 
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
