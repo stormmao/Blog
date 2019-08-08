@@ -247,6 +247,17 @@
 #### 注解
 - 注解（Annotation）是Java语言用于工具处理的标注：
 - 注解可以配置参数，没有指定配置的参数使用默认值；
-
-如果参数名称是value，且只有一个参数，那么可以省略参数名称
+- Java使用@interface定义注解：
+    - 可定义多个参数和默认值，核心参数使用value名称；
+    - 必须设置@Target来指定Annotation可以应用的范围；
+    - 应当设置@Retention(RetentionPolicy.RUNTIME)便于运行期读取该Annotation。
+    - 如果参数名称是value，且只有一个参数，那么可以省略参数名称
+- 对JavaBean的属性值按规则进行检查；
+- JUnit会自动运行@Test标记的测试方法。
+#### 泛型
+- 泛型就是定义一种模板，例如ArrayList<T>，然后在代码中为用到的类创建对应的ArrayList<类型>；
+- 泛型就是编写模板代码来适应任意类型；
+- 泛型的好处是使用时不必对类型进行强制转换，它通过编译器对类型进行检查；
+- 注意泛型的继承关系：可以把ArrayList<Integer>向上转型为List<Integer>（T不能变！），但不能把ArrayList<Integer>向上转型为ArrayList<Number>（T不能变成父类）。
+    
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
