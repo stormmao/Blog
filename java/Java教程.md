@@ -259,5 +259,9 @@
 - 泛型就是编写模板代码来适应任意类型；
 - 泛型的好处是使用时不必对类型进行强制转换，它通过编译器对类型进行检查；
 - 注意泛型的继承关系：可以把ArrayList<Integer>向上转型为List<Integer>（T不能变！），但不能把ArrayList<Integer>向上转型为ArrayList<Number>（T不能变成父类）。
+- 使用泛型时，把泛型参数<T>替换为需要的class类型，例如：ArrayList<String>，ArrayList<Number>等；
+- 可以省略编译器能自动推断出的类型，例如：List<String> list = new ArrayList<>();；
+- 不指定泛型参数类型时，编译器会给出警告，且只能将<T>视为Object类型；
+- 可以在接口中定义泛型类型，实现此接口的类必须实现正确的泛型类型。
     
 [廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
