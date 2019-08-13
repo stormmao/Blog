@@ -266,5 +266,6 @@
 - 编写泛型时，需要定义泛型类型<T>；
 - 静态方法不能引用泛型类型<T>，必须定义其他类型（例如<K>）来实现静态泛型方法；
 - 泛型可以同时定义多种类型，例如Map<K, V>    
-[廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)
+[廖雪峰Java](https://www.liaoxuefeng.com/wiki/1252599548343744/1255884132971296)    
+    
 [菜鸟教程Java](https://www.runoob.com/java/java-inheritance.html)
