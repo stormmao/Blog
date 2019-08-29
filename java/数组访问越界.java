@@ -41,7 +41,8 @@ public class Solution {
         
         int k = 0;
         int m = array.length-1;
-        if (m<0){m=0;}
+        if(array.length==0) return; //可以替换下面的判断条件
+        //if (m<0){m=0;}
         for(int i=0;i< array.length;++i){
             if(array[i]%2==1){
                 a[k] = array[i];
@@ -50,7 +51,7 @@ public class Solution {
         }
         for(int j=array.length-1;j>=0;j--){
             if(array[j]%2==0){
-                if (j<0){j=0;}
+                //if (j<0){j=0;}
                 a[m] = array[j];
                 m--;
             }
