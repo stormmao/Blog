@@ -1,0 +1,24 @@
+/*
+public class ListNode {
+    int val;
+    ListNode next = null;
+
+    ListNode(int val) {
+        this.val = val;
+    }
+}*/
+public class Solution {
+    public ListNode FindKthToTail(ListNode head,int k) {
+        ListNode fast,slow;
+        fast=slow=head;
+        int i = 0;
+        for (i = 0;fast!=null;i++){
+            if (i>=k){          //边界条件
+                slow = slow.next;
+            }
+            fast = fast.next;
+        }
+        return i<k?null:slow;
+
+    }
+}
